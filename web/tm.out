@@ -13533,3 +13533,493 @@ Caused by: org.hsqldb.HsqlException: General error: database alias does not exis
 15-07-17 23:31:02,451 [qtp11301743-27] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
 15-07-17 23:32:06,957 [qtp11301743-27] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
 15-07-17 23:32:17,076 [qtp11301743-27] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 19:48:24,473 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog37.log
+15-07-18 19:48:24,562 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100038 with state COMMITTING
+15-07-18 19:48:24,565 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100038 with state COMMITTING
+15-07-18 19:48:24,567 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200038 with state COMMITTING
+15-07-18 19:48:24,567 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200038 with state COMMITTING
+15-07-18 19:48:24,569 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300038 with state COMMITTING
+15-07-18 19:48:24,570 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300038 with state COMMITTING
+15-07-18 19:48:24,571 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000400038 with state COMMITTING
+15-07-18 19:48:24,572 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000400038 with state COMMITTING
+15-07-18 19:48:24,574 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000500038 with state COMMITTING
+15-07-18 19:48:24,574 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000500038 with state COMMITTING
+.
+15-07-18 19:48:24,576 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000600038 with state COMMITTING
+15-07-18 19:48:24,577 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000600038 with state COMMITTING
+15-07-18 19:48:24,578 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000700038 with state COMMITTING
+15-07-18 19:48:24,579 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000700038 with state COMMITTING
+15-07-18 19:48:24,580 [main] Done read of logfile
+15-07-18 19:48:24,580 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog37.log
+15-07-18 19:48:24,758 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 19:54:33,642 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog38.log
+15-07-18 19:54:33,737 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100039 with state COMMITTING
+15-07-18 19:54:33,740 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100039 with state COMMITTING
+15-07-18 19:54:33,741 [main] Done read of logfile
+15-07-18 19:54:33,742 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog38.log
+15-07-18 19:54:33,927 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 19:57:26,161 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog39.log
+15-07-18 19:57:26,244 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100040 with state COMMITTING
+15-07-18 19:57:26,246 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100040 with state COMMITTING
+15-07-18 19:57:26,247 [main] Done read of logfile
+15-07-18 19:57:26,248 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog39.log
+15-07-18 19:57:26,424 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 19:59:55,763 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog40.log
+15-07-18 19:59:55,845 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100041 with state COMMITTING
+15-07-18 19:59:55,848 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100041 with state COMMITTING
+15-07-18 19:59:55,848 [main] Done read of logfile
+15-07-18 19:59:55,849 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog40.log
+15-07-18 19:59:56,025 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:02:33,363 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog41.log
+15-07-18 20:02:33,458 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100042 with state COMMITTING
+15-07-18 20:02:33,460 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100042 with state COMMITTING
+15-07-18 20:02:33,461 [main] Done read of logfile
+15-07-18 20:02:33,462 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog41.log
+15-07-18 20:02:33,635 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:04:17,974 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog42.log
+15-07-18 20:04:18,061 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100043 with state COMMITTING
+15-07-18 20:04:18,064 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100043 with state COMMITTING
+15-07-18 20:04:18,065 [main] Done read of logfile
+15-07-18 20:04:18,066 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog42.log
+15-07-18 20:04:18,316 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:05:49,237 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog43.log
+15-07-18 20:05:49,320 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100044 with state COMMITTING
+15-07-18 20:05:49,323 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100044 with state COMMITTING
+15-07-18 20:05:49,324 [main] Done read of logfile
+15-07-18 20:05:49,325 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog43.log
+15-07-18 20:05:49,504 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:09:09,466 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog44.log
+15-07-18 20:09:09,563 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100045 with state COMMITTING
+15-07-18 20:09:09,565 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100045 with state COMMITTING
+15-07-18 20:09:09,567 [main] Done read of logfile
+15-07-18 20:09:09,568 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog44.log
+15-07-18 20:09:09,754 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:12:27,590 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog45.log
+15-07-18 20:12:27,696 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100046 with state COMMITTING
+15-07-18 20:12:27,699 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100046 with state COMMITTING
+15-07-18 20:12:27,699 [main] Done read of logfile
+15-07-18 20:12:27,701 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog45.log
+15-07-18 20:12:27,885 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:22:58,958 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog46.log
+15-07-18 20:22:59,065 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100047 with state COMMITTING
+15-07-18 20:22:59,067 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100047 with state COMMITTING
+15-07-18 20:22:59,068 [main] Done read of logfile
+15-07-18 20:22:59,069 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog46.log
+15-07-18 20:23:00,774 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog47.log
+15-07-18 20:26:52,205 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog47.log
+15-07-18 20:26:52,205 [main] Done read of logfile
+15-07-18 20:26:52,206 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog47.log
+15-07-18 20:26:53,842 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog48.log
+15-07-18 20:31:07,332 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog48.log
+15-07-18 20:31:07,332 [main] Done read of logfile
+15-07-18 20:31:07,333 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog48.log
+15-07-18 20:31:09,261 [main] AtomikosNonXADataSourceBean 'atomikosDatasource': no testQuery set - the connection pool will not be able to validate the connections!
+15-07-18 20:31:12,002 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:32:25,942 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog49.log
+15-07-18 20:32:26,036 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100050 with state COMMITTING
+15-07-18 20:32:26,038 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100050 with state COMMITTING
+15-07-18 20:32:26,039 [main] Done read of logfile
+15-07-18 20:32:26,040 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog49.log
+15-07-18 20:32:26,390 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:33:03,436 [qtp29874992-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:36:24,310 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog50.log
+15-07-18 20:36:24,434 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100051 with state COMMITTING
+15-07-18 20:36:24,437 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100051 with state COMMITTING
+15-07-18 20:36:24,438 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200051 with state COMMITTING
+15-07-18 20:36:24,439 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200051 with state COMMITTING
+15-07-18 20:36:24,440 [main] Done read of logfile
+15-07-18 20:36:24,440 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog50.log
+15-07-18 20:36:24,818 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:40:17,051 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog51.log
+15-07-18 20:40:17,343 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100052 with state COMMITTING
+15-07-18 20:40:17,349 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100052 with state COMMITTING
+15-07-18 20:40:17,349 [main] Done read of logfile
+15-07-18 20:40:17,351 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog51.log
+15-07-18 20:40:17,624 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:44:58,163 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog52.log
+15-07-18 20:44:58,256 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100053 with state COMMITTING
+15-07-18 20:44:58,259 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100053 with state COMMITTING
+15-07-18 20:44:58,259 [main] Done read of logfile
+15-07-18 20:44:58,260 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog52.log
+15-07-18 20:44:58,646 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:45:54,470 [qtp29874992-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:46:46,309 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog53.log
+15-07-18 20:46:46,627 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100054 with state COMMITTING
+15-07-18 20:46:46,630 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100054 with state COMMITTING
+15-07-18 20:46:46,632 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200054 with state COMMITTING
+15-07-18 20:46:46,634 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200054 with state COMMITTING
+15-07-18 20:46:46,635 [main] Done read of logfile
+15-07-18 20:46:46,636 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog53.log
+15-07-18 20:46:46,819 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:49:11,290 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog54.log
+15-07-18 20:49:11,384 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100055 with state COMMITTING
+15-07-18 20:49:11,388 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100055 with state COMMITTING
+15-07-18 20:49:11,389 [main] Done read of logfile
+15-07-18 20:49:11,389 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog54.log
+15-07-18 20:49:11,837 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:49:29,608 [qtp29874992-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:50:15,373 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog55.log
+15-07-18 20:50:15,699 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100056 with state COMMITTING
+15-07-18 20:50:15,702 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100056 with state COMMITTING
+15-07-18 20:50:15,708 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200056 with state COMMITTING
+15-07-18 20:50:15,709 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200056 with state COMMITTING
+15-07-18 20:50:15,711 [main] Done read of logfile
+15-07-18 20:50:15,712 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog55.log
+15-07-18 20:50:15,980 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:53:40,354 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog56.log
+15-07-18 20:53:40,592 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100057 with state COMMITTING
+15-07-18 20:53:40,594 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100057 with state COMMITTING
+15-07-18 20:53:40,595 [main] Done read of logfile
+15-07-18 20:53:40,596 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog56.log
+15-07-18 20:53:40,835 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:56:18,636 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog57.log
+15-07-18 20:56:18,869 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100058 with state COMMITTING
+15-07-18 20:56:18,871 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100058 with state COMMITTING
+15-07-18 20:56:18,872 [main] Done read of logfile
+15-07-18 20:56:18,873 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog57.log
+15-07-18 20:56:19,054 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:58:08,301 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog58.log
+15-07-18 20:58:08,388 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100059 with state COMMITTING
+15-07-18 20:58:08,391 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100059 with state COMMITTING
+15-07-18 20:58:08,392 [main] Done read of logfile
+15-07-18 20:58:08,393 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog58.log
+15-07-18 20:58:08,722 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 20:58:39,764 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog59.log
+15-07-18 20:58:39,997 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100060 with state COMMITTING
+15-07-18 20:58:40,000 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100060 with state COMMITTING
+15-07-18 20:58:40,000 [main] Done read of logfile
+15-07-18 20:58:40,002 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog59.log
+15-07-18 20:58:40,208 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 21:07:27,256 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog60.log
+15-07-18 21:07:27,500 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100061 with state COMMITTING
+15-07-18 21:07:27,505 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100061 with state COMMITTING
+15-07-18 21:07:27,507 [main] Done read of logfile
+15-07-18 21:07:27,509 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog60.log
+15-07-18 21:07:27,721 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 21:12:08,569 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog61.log
+15-07-18 21:12:08,814 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100062 with state COMMITTING
+15-07-18 21:12:08,817 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100062 with state COMMITTING
+15-07-18 21:12:08,817 [main] Done read of logfile
+15-07-18 21:12:08,819 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog61.log
+15-07-18 21:12:09,106 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 21:14:25,589 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog62.log
+15-07-18 21:14:25,870 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100063 with state COMMITTING
+15-07-18 21:14:25,873 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100063 with state COMMITTING
+15-07-18 21:14:25,874 [main] Done read of logfile
+15-07-18 21:14:25,876 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog62.log
+15-07-18 21:14:26,145 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 21:16:26,141 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog63.log
+15-07-18 21:16:26,268 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100064 with state COMMITTING
+15-07-18 21:16:26,271 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100064 with state COMMITTING
+15-07-18 21:16:26,272 [main] Done read of logfile
+15-07-18 21:16:26,273 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog63.log
+15-07-18 21:16:26,633 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 21:16:54,446 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog64.log
+15-07-18 21:16:54,728 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100065 with state COMMITTING
+15-07-18 21:16:54,731 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100065 with state COMMITTING
+15-07-18 21:16:54,731 [main] Done read of logfile
+15-07-18 21:16:54,732 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog64.log
+15-07-18 21:16:54,949 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-18 21:20:45,158 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog65.log
+15-07-18 21:20:45,241 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100066 with state COMMITTING
+15-07-18 21:20:45,244 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100066 with state COMMITTING
+15-07-18 21:20:45,244 [main] Done read of logfile
+15-07-18 21:20:45,245 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog65.log
+15-07-18 21:20:45,639 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 14:41:19,647 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog66.log
+15-07-19 14:41:19,776 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100067 with state COMMITTING
+15-07-19 14:41:19,780 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100067 with state COMMITTING
+15-07-19 14:41:19,781 [main] Done read of logfile
+15-07-19 14:41:19,782 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog66.log
+15-07-19 14:41:20,083 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 14:45:38,819 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog67.log
+15-07-19 14:45:38,911 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100068 with state COMMITTING
+15-07-19 14:45:38,915 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100068 with state COMMITTING
+15-07-19 14:45:38,917 [main] Done read of logfile
+15-07-19 14:45:38,918 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog67.log
+15-07-19 14:45:39,226 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 14:46:38,558 [qtp11837463-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 14:46:38,716 [qtp11837463-28] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:01:24,001 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog68.log
+15-07-19 15:01:24,154 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100069 with state COMMITTING
+15-07-19 15:01:24,158 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100069 with state COMMITTING
+15-07-19 15:01:24,160 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200069 with state COMMITTING
+15-07-19 15:01:24,161 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200069 with state COMMITTING
+15-07-19 15:01:24,167 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300069 with state COMMITTING
+15-07-19 15:01:24,168 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300069 with state COMMITTING
+15-07-19 15:01:24,168 [main] Done read of logfile
+15-07-19 15:01:24,170 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog68.log
+15-07-19 15:01:24,425 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:04:07,897 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog69.log
+15-07-19 15:04:07,990 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100070 with state COMMITTING
+15-07-19 15:04:07,993 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100070 with state COMMITTING
+15-07-19 15:04:07,995 [main] Done read of logfile
+15-07-19 15:04:07,996 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog69.log
+15-07-19 15:04:08,285 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:06:48,070 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog70.log
+15-07-19 15:06:48,181 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100071 with state COMMITTING
+15-07-19 15:06:48,183 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100071 with state COMMITTING
+15-07-19 15:06:48,202 [main] Done read of logfile
+15-07-19 15:06:48,204 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog70.log
+15-07-19 15:06:48,449 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:10:16,137 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog71.log
+15-07-19 15:10:16,222 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100072 with state COMMITTING
+15-07-19 15:10:16,224 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100072 with state COMMITTING
+15-07-19 15:10:16,225 [main] Done read of logfile
+15-07-19 15:10:16,226 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog71.log
+15-07-19 15:10:16,448 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:13:54,900 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog72.log
+15-07-19 15:13:54,998 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100073 with state COMMITTING
+15-07-19 15:13:55,001 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100073 with state COMMITTING
+15-07-19 15:13:55,003 [main] Done read of logfile
+15-07-19 15:13:55,004 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog72.log
+15-07-19 15:13:55,230 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:16:31,866 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog73.log
+15-07-19 15:16:32,037 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100074 with state COMMITTING
+15-07-19 15:16:32,041 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100074 with state COMMITTING
+15-07-19 15:16:32,042 [main] Done read of logfile
+15-07-19 15:16:32,043 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog73.log
+15-07-19 15:16:32,293 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:17:28,180 [qtp11837463-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:20:06,319 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog74.log
+15-07-19 15:20:06,416 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100075 with state COMMITTING
+15-07-19 15:20:06,419 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100075 with state COMMITTING
+15-07-19 15:20:06,420 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200075 with state COMMITTING
+15-07-19 15:20:06,421 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200075 with state COMMITTING
+15-07-19 15:20:06,422 [main] Done read of logfile
+15-07-19 15:20:06,423 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog74.log
+15-07-19 15:20:06,583 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:20:33,842 [qtp11837463-25] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:20:34,958 [qtp11837463-25] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:22:27,450 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog75.log
+15-07-19 15:22:27,535 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100076 with state COMMITTING
+15-07-19 15:22:27,538 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100076 with state COMMITTING
+15-07-19 15:22:27,540 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200076 with state COMMITTING
+15-07-19 15:22:27,541 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200076 with state COMMITTING
+15-07-19 15:22:27,547 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300076 with state COMMITTING
+15-07-19 15:22:27,548 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300076 with state COMMITTING
+15-07-19 15:22:27,548 [main] Done read of logfile
+15-07-19 15:22:27,550 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog75.log
+15-07-19 15:22:27,800 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:22:36,277 [qtp11837463-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:22:37,424 [qtp11837463-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:23:48,819 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog76.log
+15-07-19 15:23:48,937 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100077 with state COMMITTING
+15-07-19 15:23:48,939 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100077 with state COMMITTING
+15-07-19 15:23:48,941 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200077 with state COMMITTING
+15-07-19 15:23:48,942 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200077 with state COMMITTING
+15-07-19 15:23:48,947 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300077 with state COMMITTING
+15-07-19 15:23:48,948 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300077 with state COMMITTING
+15-07-19 15:23:48,949 [main] Done read of logfile
+15-07-19 15:23:48,951 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog76.log
+15-07-19 15:23:49,225 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:24:24,740 [qtp11837463-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:25:57,978 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog77.log
+15-07-19 15:25:58,082 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100078 with state COMMITTING
+15-07-19 15:25:58,086 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100078 with state COMMITTING
+15-07-19 15:25:58,088 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200078 with state COMMITTING
+15-07-19 15:25:58,089 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200078 with state COMMITTING
+15-07-19 15:25:58,090 [main] Done read of logfile
+15-07-19 15:25:58,091 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog77.log
+15-07-19 15:25:58,262 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:26:14,839 [qtp11837463-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:37:56,339 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog78.log
+15-07-19 15:37:56,460 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100079 with state COMMITTING
+15-07-19 15:37:56,464 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100079 with state COMMITTING
+15-07-19 15:37:56,465 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200079 with state COMMITTING
+15-07-19 15:37:56,467 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200079 with state COMMITTING
+15-07-19 15:37:56,468 [main] Done read of logfile
+15-07-19 15:37:56,469 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog78.log
+15-07-19 15:37:56,647 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:38:08,036 [qtp14327351-27] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:39:25,702 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog79.log
+15-07-19 15:39:25,814 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100080 with state COMMITTING
+15-07-19 15:39:25,817 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100080 with state COMMITTING
+15-07-19 15:39:25,818 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200080 with state COMMITTING
+15-07-19 15:39:25,819 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200080 with state COMMITTING
+15-07-19 15:39:25,820 [main] Done read of logfile
+15-07-19 15:39:25,820 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog79.log
+15-07-19 15:39:26,012 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:39:32,694 [qtp14327351-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:46:10,706 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog80.log
+15-07-19 15:46:10,788 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100081 with state COMMITTING
+15-07-19 15:46:10,791 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100081 with state COMMITTING
+15-07-19 15:46:10,792 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200081 with state COMMITTING
+15-07-19 15:46:10,793 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200081 with state COMMITTING
+15-07-19 15:46:10,793 [main] Done read of logfile
+15-07-19 15:46:10,794 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog80.log
+15-07-19 15:46:10,972 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:47:06,951 [qtp14327351-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:47:07,053 [qtp14327351-27] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:48:16,753 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog81.log
+15-07-19 15:48:16,838 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100082 with state COMMITTING
+15-07-19 15:48:16,840 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100082 with state COMMITTING
+15-07-19 15:48:16,842 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200082 with state COMMITTING
+15-07-19 15:48:16,843 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200082 with state COMMITTING
+15-07-19 15:48:16,844 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300082 with state COMMITTING
+15-07-19 15:48:16,845 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300082 with state COMMITTING
+15-07-19 15:48:16,846 [main] Done read of logfile
+15-07-19 15:48:16,847 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog81.log
+15-07-19 15:48:17,060 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:48:25,970 [qtp14327351-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:48:48,574 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog82.log
+15-07-19 15:48:48,666 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100083 with state COMMITTING
+15-07-19 15:48:48,668 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100083 with state COMMITTING
+15-07-19 15:48:48,670 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200083 with state COMMITTING
+15-07-19 15:48:48,670 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200083 with state COMMITTING
+15-07-19 15:48:48,671 [main] Done read of logfile
+15-07-19 15:48:48,672 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog82.log
+15-07-19 15:48:48,896 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-19 15:49:17,668 [qtp14327351-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 09:37:46,451 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog83.log
+15-07-21 09:37:46,709 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100084 with state COMMITTING
+15-07-21 09:37:46,720 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100084 with state COMMITTING
+15-07-21 09:37:46,724 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200084 with state COMMITTING
+15-07-21 09:37:46,727 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200084 with state COMMITTING
+15-07-21 09:37:46,728 [main] Done read of logfile
+15-07-21 09:37:46,729 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog83.log
+15-07-21 09:37:47,155 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 09:44:26,404 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog84.log
+15-07-21 09:44:26,498 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100085 with state COMMITTING
+15-07-21 09:44:26,501 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100085 with state COMMITTING
+15-07-21 09:44:26,502 [main] Done read of logfile
+15-07-21 09:44:26,502 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog84.log
+15-07-21 09:44:26,675 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 09:46:11,905 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog85.log
+15-07-21 09:46:12,013 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100086 with state COMMITTING
+15-07-21 09:46:12,016 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100086 with state COMMITTING
+15-07-21 09:46:12,020 [main] Done read of logfile
+15-07-21 09:46:12,021 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog85.log
+15-07-21 09:46:12,218 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 09:47:48,519 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog86.log
+15-07-21 09:47:48,615 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100087 with state COMMITTING
+15-07-21 09:47:48,617 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100087 with state COMMITTING
+15-07-21 09:47:48,618 [main] Done read of logfile
+15-07-21 09:47:48,619 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog86.log
+15-07-21 09:47:48,837 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 09:53:17,251 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog87.log
+15-07-21 09:53:17,342 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100088 with state COMMITTING
+15-07-21 09:53:17,345 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100088 with state COMMITTING
+15-07-21 09:53:17,345 [main] Done read of logfile
+15-07-21 09:53:17,346 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog87.log
+15-07-21 09:53:17,516 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 09:55:11,459 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog88.log
+15-07-21 09:55:11,544 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100089 with state COMMITTING
+15-07-21 09:55:11,547 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100089 with state COMMITTING
+15-07-21 09:55:11,548 [main] Done read of logfile
+15-07-21 09:55:11,548 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog88.log
+15-07-21 09:55:11,722 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 09:55:23,514 [qtp14327351-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 09:56:30,847 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog89.log
+15-07-21 09:56:30,964 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100090 with state COMMITTING
+15-07-21 09:56:30,967 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100090 with state COMMITTING
+15-07-21 09:56:30,970 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200090 with state COMMITTING
+15-07-21 09:56:30,971 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200090 with state COMMITTING
+15-07-21 09:56:30,972 [main] Done read of logfile
+15-07-21 09:56:30,973 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog89.log
+15-07-21 09:56:31,148 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 09:57:04,968 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog90.log
+15-07-21 09:57:05,058 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100091 with state COMMITTING
+15-07-21 09:57:05,062 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100091 with state COMMITTING
+15-07-21 09:57:05,062 [main] Done read of logfile
+15-07-21 09:57:05,063 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog90.log
+15-07-21 09:57:05,277 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 10:05:42,252 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog91.log
+15-07-21 10:05:42,336 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100092 with state COMMITTING
+15-07-21 10:05:42,338 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100092 with state COMMITTING
+15-07-21 10:05:42,339 [main] Done read of logfile
+15-07-21 10:05:42,340 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog91.log
+15-07-21 10:05:42,550 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 10:19:48,393 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog92.log
+15-07-21 10:19:48,484 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100093 with state COMMITTING
+15-07-21 10:19:48,487 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100093 with state COMMITTING
+15-07-21 10:19:48,488 [main] Done read of logfile
+15-07-21 10:19:48,489 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog92.log
+15-07-21 10:19:48,756 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 10:19:55,973 [qtp14327351-27] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 10:20:06,473 [qtp14327351-27] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 10:24:36,620 [qtp14327351-27] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 10:39:21,220 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog93.log
+15-07-21 10:39:21,383 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100094 with state COMMITTING
+15-07-21 10:39:21,387 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100094 with state COMMITTING
+15-07-21 10:39:21,390 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200094 with state COMMITTING
+15-07-21 10:39:21,391 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200094 with state COMMITTING
+15-07-21 10:39:21,398 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300094 with state COMMITTING
+15-07-21 10:39:21,399 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300094 with state COMMITTING
+15-07-21 10:39:21,402 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000400094 with state COMMITTING
+15-07-21 10:39:21,403 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000400094 with state COMMITTING
+15-07-21 10:39:21,404 [main] Done read of logfile
+15-07-21 10:39:21,405 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog93.log
+15-07-21 10:39:21,694 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 10:39:22,133 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog94.log
+15-07-21 10:40:18,444 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog94.log
+15-07-21 10:40:18,444 [main] Done read of logfile
+15-07-21 10:40:18,445 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog94.log
+15-07-21 10:40:18,634 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 10:40:19,082 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog95.log
+15-07-21 11:05:03,207 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog95.log
+15-07-21 11:05:03,208 [main] Done read of logfile
+15-07-21 11:05:03,209 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog95.log
+15-07-21 11:05:03,373 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 11:05:03,972 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog96.log
+15-07-21 11:12:05,076 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog96.log
+15-07-21 11:12:05,077 [main] Done read of logfile
+15-07-21 11:12:05,078 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog96.log
+15-07-21 11:12:05,298 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 11:12:05,883 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog97.log
+15-07-21 11:14:06,876 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog97.log
+15-07-21 11:14:06,877 [main] Done read of logfile
+15-07-21 11:14:06,877 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog97.log
+15-07-21 11:14:07,091 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 11:14:07,771 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog98.log
+15-07-21 11:18:55,497 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog98.log
+15-07-21 11:18:55,497 [main] Done read of logfile
+15-07-21 11:18:55,498 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog98.log
+15-07-21 11:18:55,697 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 11:18:56,273 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog99.log
+15-07-21 11:19:41,404 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog99.log
+15-07-21 11:19:41,404 [main] Done read of logfile
+15-07-21 11:19:41,405 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog99.log
+15-07-21 11:19:41,575 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 11:19:42,266 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 11:19:42,529 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 11:19:42,610 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-07-21 11:20:13,533 [qtp128195-25] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-08-13 10:42:39,346 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog100.log
+15-08-13 10:42:39,593 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100101 with state COMMITTING
+15-08-13 10:42:39,596 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100101 with state COMMITTING
+15-08-13 10:42:39,598 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200101 with state COMMITTING
+15-08-13 10:42:39,599 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200101 with state COMMITTING
+15-08-13 10:42:39,626 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300101 with state COMMITTING
+15-08-13 10:42:39,627 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300101 with state COMMITTING
+15-08-13 10:42:39,629 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000400101 with state COMMITTING
+15-08-13 10:42:39,630 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000400101 with state COMMITTING
+15-08-13 10:42:39,631 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000500101 with state COMMITTING
+15-08-13 10:42:39,632 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000500101 with state COMMITTING
+.
+15-08-13 10:42:39,633 [main] Done read of logfile
+15-08-13 10:42:39,634 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog100.log
+15-08-13 10:42:39,920 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-08-13 10:42:57,348 [qtp128195-25] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-08-13 10:43:08,978 [qtp128195-25] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-08-13 10:43:37,260 [qtp128195-25] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-08-13 10:44:40,793 [qtp128195-25] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-08-13 11:03:11,090 [main] Starting read of logfile /dados/Projetos/exemploweb/web/./tmlog101.log
+15-08-13 11:03:11,219 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100102 with state COMMITTING
+15-08-13 11:03:11,221 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000100102 with state COMMITTING
+15-08-13 11:03:11,223 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200102 with state COMMITTING
+15-08-13 11:03:11,224 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000200102 with state COMMITTING
+15-08-13 11:03:11,225 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300102 with state COMMITTING
+15-08-13 11:03:11,226 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000300102 with state COMMITTING
+15-08-13 11:03:11,227 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000400102 with state COMMITTING
+15-08-13 11:03:11,228 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000400102 with state COMMITTING
+15-08-13 11:03:11,240 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000500102 with state COMMITTING
+15-08-13 11:03:11,241 [main] Local heuristic termination of coordinator 127.0.1.1.tm0000500102 with state COMMITTING
+.
+15-08-13 11:03:11,242 [main] Done read of logfile
+15-08-13 11:03:11,243 [main] Logfile closed: /dados/Projetos/exemploweb/web/./tmlog101.log
+15-08-13 11:03:11,411 [main] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-08-13 11:04:11,976 [qtp1672812-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-08-13 11:05:14,813 [qtp1672812-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-08-13 11:05:18,777 [qtp1672812-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000
+15-08-13 11:05:20,640 [qtp1672812-26] Attempt to create a transaction with a timeout that exceeds com.atomikos.icatch.max_timeout - truncating to: 300000

@@ -31,19 +31,19 @@
 		<groupId>com.atomikos</groupId>
 		<artifactId>transactions</artifactId>
 		<version>${atomikos.version}</version>
-<scope>test</scope>
+		<scope>test</scope>
 	</dependency>
 	<dependency>
 		<groupId>com.atomikos</groupId>
 		<artifactId>transactions-jta</artifactId>
 		<version>${atomikos.version}</version>
-<scope>test</scope>
+		<scope>test</scope>
 	</dependency>
 	<dependency>
 		<groupId>com.atomikos</groupId>
 		<artifactId>transactions-jdbc</artifactId>
 		<version>${atomikos.version}</version>
-<scope>test</scope>
+		<scope>test</scope>
 	</dependency>
 
 
@@ -53,38 +53,51 @@
       <artifactId>spring-core</artifactId>
       <version>${spring.version}</version>
     </dependency>
-
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>${spring.version}</version>
     </dependency>
-
+	<dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
       <version>${spring.version}</version>
     </dependency>
-
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-orm</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
 
     <!-- Hibernate -->
     <dependency>
       <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-entitymanager</artifactId>
-      <version>3.6.9.Final</version>
+      <artifactId>hibernate-core</artifactId>
+      <version>${hibernate.version}</version>
     </dependency>
 
+    <!-- Jackson -->
 	<dependency>
-		<groupId>joda-time</groupId>
-		<artifactId>joda-time</artifactId>
-		<version>2.1</version>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-core</artifactId>
+	    <version>2.5.1</version>
 	</dependency>
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>2.5.1</version>
+	</dependency>
+	<dependency>
+	  <groupId>com.fasterxml.jackson.core</groupId>
+	  <artifactId>jackson-annotations</artifactId>
+	  <version>2.5.1</version>
+	</dependency>
+    
   </dependencies>
-
 
 </project>

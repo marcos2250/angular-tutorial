@@ -1,15 +1,20 @@
 package marcos2250.exemploweb.dominio;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-import org.joda.time.LocalDate;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 
 @Entity
 @Table(name = "PES_PESSOA")
@@ -45,6 +50,8 @@ public class Pessoa {
     }
 
     @Column(name = "PER_DT_NASCIMENTO")
+    @JsonSerialize(using = LocalDateSerializer.class)
+    @JsonDeserialize(using = LocalDateDeserializer.class)
     public LocalDate getDataNascimento() {
         return dataNascimento;
     }
@@ -54,7 +61,7 @@ public class Pessoa {
         return telefone;
     }
 
-    @ManyToMany(mappedBy = "empregados")
+    @ManyToMany(mappedBy = "empregados", fetch = FetchType.EAGER)
     public List<Empresa> getEmpresas() {
         return empresas;
     }

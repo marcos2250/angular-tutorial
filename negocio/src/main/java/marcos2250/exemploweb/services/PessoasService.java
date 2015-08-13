@@ -4,7 +4,6 @@ import java.util.List;
 
 import marcos2250.exemploweb.dominio.Pessoa;
 
-import org.joda.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,15 +15,24 @@ public class PessoasService {
     private GenericDAO dao;
 
     @Transactional
-    public void incluir(String nome) {
-        Pessoa pes = new Pessoa();
+    public void incluir(Pessoa pes) {
+        dao.save(pes);    
+    }
+    
+    @Transactional
+    public void alterar(Pessoa pes) {
+        dao.update(pes);
+    }
+    
+    @Transactional
+    public void remover(Long id) {
+        Pessoa pessoa = dao.get(Pessoa.class, id);
+        dao.delete(pessoa);
+    }
 
-        pes.setNome(nome);
-        pes.setSobrenome(nome);
-        pes.setTelefone("3222-2222");
-        pes.setDataNascimento(LocalDate.now());
-
-        dao.save(pes);
+    @Transactional(readOnly = true)
+    public Pessoa buscar(Long id) {
+        return dao.get(Pessoa.class, id);
     }
 
     @Transactional(readOnly = true)
