@@ -3,41 +3,33 @@ package marcos2250.exemploweb.dominio;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import marcos2250.exemploweb.dominio.enums.Sexo;
+import marcos2250.exemploweb.util.LocalDateDeserializer;
+import marcos2250.exemploweb.util.LocalDateSerializer;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
-import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 
 @Entity
 @Table(name = "PES_PESSOA")
-public class Pessoa {
-
-    private Long id;
+@AttributeOverride(name = ObjetoPersistente.ID, column = @Column(name = "PER_ID"))
+public class Pessoa extends ObjetoPersistente {
 
     private String nome;
-
     private String sobrenome;
-
     private LocalDate dataNascimento;
-
+    private Sexo sexo;
     private String telefone;
+    private String email;
 
     private List<Empresa> empresas;
-
-    @Id
-    @GeneratedValue
-    @Column(name = "PER_ID")
-    public Long getId() {
-        return id;
-    }
 
     @Column(name = "PER_ST_NOME")
     public String getNome() {
@@ -61,13 +53,20 @@ public class Pessoa {
         return telefone;
     }
 
-    @ManyToMany(mappedBy = "empregados", fetch = FetchType.EAGER)
-    public List<Empresa> getEmpresas() {
-        return empresas;
+    @Column(name = "PER_ST_EMAIL")
+    public String getEmail() {
+        return email;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    @Column(name = "EMP_CD_SEXO")
+    public Sexo getSexo() {
+        return sexo;
+    }
+
+    @ManyToMany(mappedBy = "empregados")
+    @JsonIgnore
+    public List<Empresa> getEmpresas() {
+        return empresas;
     }
 
     public void setNome(String nome) {
@@ -90,4 +89,33 @@ public class Pessoa {
         this.empresas = empresas;
     }
 
+    public void setSexo(Sexo sexo) {
+        this.sexo = sexo;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa: " + nome + " " + sobrenome;
+    };
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (Pessoa.class.isInstance(obj)) {
+            Pessoa cast = Pessoa.class.cast(obj);
+            return cast.getId() == this.getId();
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) (nome.hashCode() + sobrenome.hashCode() + this.getId());
+    }
 }

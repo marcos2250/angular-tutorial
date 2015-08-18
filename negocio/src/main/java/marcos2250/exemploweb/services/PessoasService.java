@@ -3,6 +3,7 @@ package marcos2250.exemploweb.services;
 import java.util.List;
 
 import marcos2250.exemploweb.dominio.Pessoa;
+import marcos2250.exemploweb.repository.PessoaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,32 +13,32 @@ import org.springframework.transaction.annotation.Transactional;
 public class PessoasService {
 
     @Autowired
-    private GenericDAO dao;
+    private PessoaRepository repository;
 
     @Transactional
     public void incluir(Pessoa pes) {
-        dao.save(pes);    
+        repository.incluir(pes);
     }
-    
+
     @Transactional
     public void alterar(Pessoa pes) {
-        dao.update(pes);
+        repository.alterar(pes);
     }
-    
+
     @Transactional
     public void remover(Long id) {
-        Pessoa pessoa = dao.get(Pessoa.class, id);
-        dao.delete(pessoa);
+        Pessoa pessoa = repository.buscar(id);
+        repository.remover(pessoa);
     }
 
     @Transactional(readOnly = true)
     public Pessoa buscar(Long id) {
-        return dao.get(Pessoa.class, id);
+        return repository.buscar(id);
     }
 
     @Transactional(readOnly = true)
     public List<Pessoa> listar() {
-        return dao.list(Pessoa.class);
+        return repository.listar();
     }
 
 }

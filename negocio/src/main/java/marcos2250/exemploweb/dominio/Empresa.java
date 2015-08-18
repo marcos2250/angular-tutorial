@@ -3,27 +3,25 @@ package marcos2250.exemploweb.dominio;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import marcos2250.exemploweb.dominio.enums.TipoEmpresa;
+import marcos2250.exemploweb.util.LocalDateDeserializer;
+import marcos2250.exemploweb.util.LocalDateSerializer;
+
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
-import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 
 @Entity
 @Table(name = "EMP_EMPRESA")
-public class Empresa {
-
-    private Long id;
+@AttributeOverride(name = ObjetoPersistente.ID, column = @Column(name = "EMP_ID"))
+public class Empresa extends ObjetoPersistente {
 
     private String nome;
     private TipoEmpresa tipo;
@@ -31,13 +29,6 @@ public class Empresa {
     private LocalDate dataFundacao;
 
     private List<Pessoa> empregados;
-
-    @Id
-    @GeneratedValue
-    @Column(name = "EMP_ID")
-    public Long getId() {
-        return id;
-    }
 
     @Column(name = "EMP_ST_NOME")
     public String getNome() {
@@ -60,13 +51,8 @@ public class Empresa {
     }
 
     @Column(name = "EMP_CD_TIPO")
-    @Enumerated(EnumType.ORDINAL)
     public TipoEmpresa getTipo() {
         return tipo;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public void setNome(String nome) {
@@ -83,6 +69,28 @@ public class Empresa {
 
     public void setEmpregados(List<Pessoa> empregados) {
         this.empregados = empregados;
+    }
+
+    @Override
+    public String toString() {
+        return "Empresa: " + nome;
+    };
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (Empresa.class.isInstance(obj)) {
+            Empresa cast = Empresa.class.cast(obj);
+            return cast.getId() == this.getId();
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) (nome.hashCode() + this.getId());
     }
 
 }

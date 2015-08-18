@@ -14,6 +14,7 @@
   <!-- IoC com anotações -->
   <context:annotation-config />
   <context:component-scan base-package="marcos2250.exemploweb.services" />
+  <context:component-scan base-package="marcos2250.exemploweb.repository" />
 
   <!-- Hibernate -->
   <bean id="abstractHbnSessionFactory" abstract="true"

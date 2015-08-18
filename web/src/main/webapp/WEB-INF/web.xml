@@ -35,13 +35,13 @@
 
   <!-- Spring MVC Servlet (p/ REST) -->
   <servlet>
-     <servlet-name>spring-mvc</servlet-name>
-     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-     <load-on-startup>1</load-on-startup>
+    <servlet-name>rest</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-     <servlet-name>spring-mvc</servlet-name>
-     <url-pattern>/</url-pattern>
+    <servlet-name>rest</servlet-name>
+    <url-pattern>/rest/*</url-pattern>
   </servlet-mapping>
 
   <!-- Servlets de apoio -->

@@ -1,7 +1,5 @@
 package marcos2250.exemploweb.util;
 
-import marcos2250.exemploweb.util.ServidorHsqldbMain;
-
 public class StartApp {
 
     private static final String[] SEM_PARAMETROS = new String[] {};
