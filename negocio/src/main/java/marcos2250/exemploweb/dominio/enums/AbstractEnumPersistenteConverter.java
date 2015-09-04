@@ -1,25 +1,33 @@
 package marcos2250.exemploweb.dominio.enums;
 
+import java.io.Serializable;
+
 import javax.persistence.AttributeConverter;
 
-public abstract class AbstractEnumPersistenteConverter<E extends EnumPersistente<T>, T> //
+public abstract class EnumPersistenteConverter<E extends EnumPersistente<T>, T extends Serializable> //
         implements AttributeConverter<E, T> {
 
-    public abstract Class<E> getClasseEnum();
+    public abstract Class<E> getEnumClass();
 
     @Override
-    public T convertToDatabaseColumn(E attribute) {
-        return (T) attribute.getCodigo();
+    public final T convertToDatabaseColumn(E valor) {
+        if (valor == null) {
+            return null;
+        }
+        return (T) (valor.getCodigo());
     }
 
     @Override
-    public E convertToEntityAttribute(T dbData) {
-        for (E enumConstant : getClasseEnum().getEnumConstants()) {
-            if (enumConstant.getCodigo().equals(dbData)) {
-                return enumConstant;
+    public final E convertToEntityAttribute(T value) {
+        if (value == null || "".equals(value)) {
+            return null;
+        }
+        for (EnumPersistente<?> enumPersistente : getEnumClass().getEnumConstants()) {
+            if (enumPersistente.getCodigo().equals(value)) {
+                return getEnumClass().cast(enumPersistente);
             }
         }
-        throw new IllegalArgumentException("Enum value not found: " + dbData);
+        throw new IllegalArgumentException("Valor da Enum nao definido: " + value);
     }
 
 }
