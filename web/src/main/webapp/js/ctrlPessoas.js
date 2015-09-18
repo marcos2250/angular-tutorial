@@ -36,11 +36,15 @@ app.controller('ctrlPessoas',['$scope','servicos', function($scope, servicos) {
 	$scope.salvar = function() {
 	    if (Pessoa.id == 0) {
 			servicos.salvarPessoa(Pessoa).success(function() {
-				listaPessoas();
+				alert("Informacoes salvas!");
+			}).error(function(data, status) {
+        			alert(data.mensagem);
 			});
 		} else {
 			servicos.atualizarPessoa(Pessoa).success(function() {
-				listaPessoas();
+				alert("Informacoes salvas!");
+			}).error(function(data, status) {
+	        		alert(data.mensagem);
 			});
 		}		
 	}
