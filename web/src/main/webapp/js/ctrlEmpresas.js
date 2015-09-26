@@ -17,6 +17,7 @@ app.controller('ctrlEmpresas',['$scope','servicos', function($scope, servicos) {
 			Empresa.nome = dado.nome;
 			Empresa.tipo = dado.tipo;
 			Empresa.dataFundacao = dado.dataFundacao;
+			Empresa.empregados = dado.empregados;
 		});
 	}
 
@@ -25,6 +26,7 @@ app.controller('ctrlEmpresas',['$scope','servicos', function($scope, servicos) {
 		Empresa.nome = "";
 		Empresa.tipo = "";
 		Empresa.dataFundacao = "";
+		Empresa.empregados = [];
 	}
 	
 	$scope.salvar = function() {

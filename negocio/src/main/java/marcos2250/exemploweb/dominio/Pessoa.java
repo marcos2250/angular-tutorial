@@ -19,7 +19,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 @Entity
 @Table(name = "PES_PESSOA")
-@AttributeOverride(name = ObjetoPersistente.ID, column = @Column(name = "PER_ID"))
+@AttributeOverride(name = ObjetoPersistente.ID, column = @Column(name = "PES_ID"))
 public class Pessoa extends ObjetoPersistente {
 
     private String nome;
@@ -31,34 +31,34 @@ public class Pessoa extends ObjetoPersistente {
 
     private List<Empresa> empresas;
 
-    @Column(name = "PER_ST_NOME")
+    @Column(name = "PES_ST_NOME")
     public String getNome() {
         return nome;
     }
 
-    @Column(name = "PER_ST_SOBRENOME")
+    @Column(name = "PES_ST_SOBRENOME")
     public String getSobrenome() {
         return sobrenome;
     }
 
-    @Column(name = "PER_DT_NASCIMENTO")
+    @Column(name = "PES_DT_NASCIMENTO")
     @JsonSerialize(using = LocalDateSerializer.class)
     @JsonDeserialize(using = LocalDateDeserializer.class)
     public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    @Column(name = "PER_NM_TELEFONE")
+    @Column(name = "PES_NM_TELEFONE")
     public String getTelefone() {
         return telefone;
     }
 
-    @Column(name = "PER_ST_EMAIL")
+    @Column(name = "PES_ST_EMAIL")
     public String getEmail() {
         return email;
     }
 
-    @Column(name = "EMP_CD_SEXO")
+    @Column(name = "PES_CD_SEXO")
     public Sexo getSexo() {
         return sexo;
     }

@@ -4,10 +4,10 @@ import java.io.Serializable;
 
 import javax.persistence.AttributeConverter;
 
-public abstract class EnumPersistenteConverter<E extends EnumPersistente<T>, T extends Serializable> //
+public abstract class AbstractEnumPersistenteConverter<E extends EnumPersistente<T>, T extends Serializable> //
         implements AttributeConverter<E, T> {
 
-    public abstract Class<E> getEnumClass();
+    public abstract Class<E> getClasseEnum();
 
     @Override
     public final T convertToDatabaseColumn(E valor) {
@@ -22,9 +22,9 @@ public abstract class EnumPersistenteConverter<E extends EnumPersistente<T>, T e
         if (value == null || "".equals(value)) {
             return null;
         }
-        for (EnumPersistente<?> enumPersistente : getEnumClass().getEnumConstants()) {
+        for (EnumPersistente<?> enumPersistente : getClasseEnum().getEnumConstants()) {
             if (enumPersistente.getCodigo().equals(value)) {
-                return getEnumClass().cast(enumPersistente);
+                return getClasseEnum().cast(enumPersistente);
             }
         }
         throw new IllegalArgumentException("Valor da Enum nao definido: " + value);

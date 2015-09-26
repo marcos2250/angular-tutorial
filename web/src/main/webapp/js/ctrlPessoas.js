@@ -34,7 +34,7 @@ app.controller('ctrlPessoas',['$scope','servicos', function($scope, servicos) {
 	}
 	
 	$scope.salvar = function() {
-	    if (Pessoa.id == 0) {
+ 	        if (Pessoa.id == 0) {
 			servicos.salvarPessoa(Pessoa).success(function() {
 				alert("Informacoes salvas!");
 			}).error(function(data, status) {
@@ -46,7 +46,8 @@ app.controller('ctrlPessoas',['$scope','servicos', function($scope, servicos) {
 			}).error(function(data, status) {
 	        		alert(data.mensagem);
 			});
-		}		
+		}
+		listaPessoas();
 	}
 
 	$scope.excluir = function() {

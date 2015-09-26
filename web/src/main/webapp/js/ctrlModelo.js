@@ -18,7 +18,8 @@ var Empresa = {
  id:"",
  nome:"", 
  tipo:"",
- dataFundacao:""
+ dataFundacao:"",
+ empregados:[]
 };
 
 var opcoesTipoEmpresa =[

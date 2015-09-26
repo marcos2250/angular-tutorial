@@ -1,4 +1,4 @@
-package marcos2250.dominio;
+package marcos2250.exemploweb.dominio;
 
 public class MensagemDTO {
 
