@@ -11,3 +11,6 @@ Como utilizar:
 3. No Eclipse, Import existing projects, importar pacotes negocio e web.
 
 4. Abrir a classe StartApp e acionar Run/as application...
+
+5. Acessar com o browser: localhost:8080
+
