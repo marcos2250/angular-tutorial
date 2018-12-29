@@ -21,7 +21,7 @@
   
   <bean id="jtaTransactionManager" class="com.atomikos.icatch.jta.UserTransactionManager" init-method="init" destroy-method="close">
     <property name="forceShutdown" value="true"/>
-    <property name="transactionTimeout" value="20000"/>
+    <property name="transactionTimeout" value="200"/>
   </bean>
 
   <!-- JTA: Atomikos -->

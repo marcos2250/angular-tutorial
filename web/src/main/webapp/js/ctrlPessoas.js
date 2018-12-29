@@ -4,22 +4,22 @@ app.controller('ctrlPessoas',['$scope','servicos', function($scope, servicos) {
 	$scope.opcoesSexo = opcoesSexo;
 	
 	var listaPessoas = function() {
-		servicos.getPessoas().success( function(dado) {
-			$scope.pessoas = dado;
+		servicos.getPessoas().then( function(response) {
+			$scope.pessoas = response.data;
 		});
 	}
 
 	listaPessoas();
 
 	$scope.abrir = function(id) {
-		servicos.getPessoaId(id).success( function(dado) {
+		servicos.getPessoaId(id).then( function(response) {
 			Pessoa.id = id;
-			Pessoa.nome = dado.nome;
-			Pessoa.sobrenome = dado.sobrenome;
-			Pessoa.sexo = dado.sexo;
-			Pessoa.dataNascimento = dado.dataNascimento;
-			Pessoa.telefone = dado.telefone;
-			Pessoa.email = dado.email;
+			Pessoa.nome = response.data.nome;
+			Pessoa.sobrenome = response.data.sobrenome;
+			Pessoa.sexo = response.data.sexo;
+			Pessoa.dataNascimento = response.data.dataNascimento;
+			Pessoa.telefone = response.data.telefone;
+			Pessoa.email = response.data.email;
 		});
 	}
 
@@ -35,13 +35,13 @@ app.controller('ctrlPessoas',['$scope','servicos', function($scope, servicos) {
 	
 	$scope.salvar = function() {
  	        if (Pessoa.id == 0) {
-			servicos.salvarPessoa(Pessoa).success(function() {
+			servicos.salvarPessoa(Pessoa).then(function() {
 				alert("Informacoes salvas!");
 			}).error(function(data, status) {
         			alert(data.mensagem);
 			});
 		} else {
-			servicos.atualizarPessoa(Pessoa).success(function() {
+			servicos.atualizarPessoa(Pessoa).then(function() {
 				alert("Informacoes salvas!");
 			}).error(function(data, status) {
 	        		alert(data.mensagem);
@@ -51,7 +51,7 @@ app.controller('ctrlPessoas',['$scope','servicos', function($scope, servicos) {
 	}
 
 	$scope.excluir = function() {
-		servicos.removePessoa(Pessoa.id).success(function() {		
+		servicos.removePessoa(Pessoa.id).then(function() {		
 			listaPessoas();
 		});
 	}

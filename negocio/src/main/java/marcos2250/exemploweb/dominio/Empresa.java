@@ -6,17 +6,21 @@ import java.util.List;
 import javax.persistence.AttributeOverride;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-import marcos2250.exemploweb.dominio.enums.TipoEmpresa;
-import marcos2250.exemploweb.util.LocalDateDeserializer;
-import marcos2250.exemploweb.util.LocalDateSerializer;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+import marcos2250.exemploweb.dominio.enums.TipoEmpresa;
+import marcos2250.exemploweb.util.LocalDateDeserializer;
+import marcos2250.exemploweb.util.LocalDateSerializer;
 
 @Entity
 @Table(name = "EMP_EMPRESA")
@@ -42,10 +46,12 @@ public class Empresa extends ObjetoPersistente {
         return dataFundacao;
     }
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
+    @Fetch(FetchMode.SELECT)
     @JoinTable(name = "EMS_EMPREGADOS", //
     joinColumns = @JoinColumn(name = "EMP_ID"), //
     inverseJoinColumns = @JoinColumn(name = "PES_ID"))
+    //@JsonIgnore
     public List<Pessoa> getEmpregados() {
         return empregados;
     }
