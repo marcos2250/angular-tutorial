@@ -14,3 +14,14 @@ app.config(function($routeProvider) {
 	  redirectTo: '/Pessoas'
 	});
 });
+
+app.config(['$httpProvider', function ($httpProvider) {
+    $httpProvider.interceptors.push(function ($q,$rootScope) {
+        return {
+            'responseError': function (responseError) {
+                alert(responseError.data.mensagem);
+                return $q.reject(responseError);
+            }
+        };
+    });
+}]);

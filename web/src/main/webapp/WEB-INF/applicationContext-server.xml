@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+  xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+			http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+    		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    		    		
+  <description>Ambiente de Producao com DataSource configurado</description>
+
+  <import resource="classpath:applicationContext-negocio.xml" />
+ 
+  <!-- JTA -->  
+  <bean id="transactionManager" class="org.springframework.transaction.jta.JtaTransactionManager">
+    <property name="allowCustomIsolationLevels" value="true" />
+  </bean>
+
+  <!-- Datasource (esquema) do servidor de aplicacao XA -->
+  <bean id="mainDS" class="org.springframework.jndi.JndiObjectFactoryBean">
+    <property name="jndiName" value="java:comp/env/jdbc/esquema" />
+  </bean>
+
+  <!-- Hibernate -->
+  <bean id="hbnSessionFactory" parent="abstractHbnSessionFactory">
+    <property name="hibernateProperties">
+      <props merge="true">
+        <prop key="hibernate.show_sql">false</prop>
+        <prop key="hibernate.format_sql">false</prop>
+       
+        <!-- Banco de Producao -->
+        <prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
+        <prop key="hibernate.hbm2ddl.auto">update</prop>
+        <prop key="hibernate.default_schema">ESQUEMA</prop>
+
+        <prop key="hibernate.transaction.factory_class">org.hibernate.transaction.JTATransactionFactory</prop>
+        <prop key="hibernate.transaction.manager_lookup_class">org.hibernate.transaction.WebSphereTransactionManagerLookup</prop>
+        <prop key="jta.UserTransaction">java:comp/UserTransaction</prop>
+
+        <prop key="hibernate.connection.shutdown">true</prop>
+        <prop key="hibernate.jdbc.batch_size">0</prop>      
+      </props>
+    </property>
+  </bean>
+   
+</beans>

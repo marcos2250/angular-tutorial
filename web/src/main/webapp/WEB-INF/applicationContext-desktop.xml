@@ -10,30 +10,43 @@
     		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     		    		
   <description>Desenvolvimento local</description>
-
-  <!-- IoC com anotações -->
-  <context:annotation-config />
-  <context:component-scan base-package="marcos2250.exemploweb.servlets" />
-  <context:component-scan base-package="marcos2250.exemploweb.rest" />
+  
+  <import resource="classpath:applicationContext-negocio.xml" />
 
   <!-- JSON Support -->
   <bean name="viewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
-  
+
+  <!-- Hibernate -->
+  <bean id="hbnSessionFactory" parent="abstractHbnSessionFactory">
+    <property name="hibernateProperties">
+      <props merge="true">
+        <prop key="hibernate.show_sql">true</prop>
+        <prop key="hibernate.format_sql">false</prop>
+        <prop key="hibernate.connection.shutdown">true</prop>
+        <prop key="hibernate.jdbc.batch_size">0</prop>
+        <prop key="hibernate.hbm2ddl.auto">update</prop>   
+       
+        <!-- HSQLDB -->
+        <prop key="hibernate.dialect">org.hibernate.dialect.HSQLDialect</prop>
+        <!-- <prop key="hibernate.default_schema">ESQUEMA</prop> -->        
+      </props>
+    </property>
+  </bean>  
+
+  <!-- Atomikos JTA + HSQLDB --> 
   <bean id="jtaTransactionManager" class="com.atomikos.icatch.jta.UserTransactionManager" init-method="init" destroy-method="close">
     <property name="forceShutdown" value="true"/>
     <property name="transactionTimeout" value="200"/>
   </bean>
 
-  <!-- JTA: Atomikos -->
-  <bean id="jtaUserTransaction" class="com.atomikos.icatch.jta.UserTransactionImp">
-  </bean>
+  <bean id="jtaUserTransaction" class="com.atomikos.icatch.jta.UserTransactionImp"></bean>
 
   <bean id="transactionManager" class="org.springframework.transaction.jta.JtaTransactionManager">
-    <property name="userTransaction" ref="jtaTransactionManager" />
-    <property name="allowCustomIsolationLevels" value="true" />
+    <property name="userTransaction" ref="jtaUserTransaction" />
+    <property name="transactionManager" ref="jtaTransactionManager"/>
+    <property name="allowCustomIsolationLevels" value="true" />    
   </bean>
 
-  <!-- DB: HSQLDB -->
   <bean id="mainDS" class="com.atomikos.jdbc.nonxa.AtomikosNonXADataSourceBean" destroy-method="close">
     <property name="url" value="jdbc:hsqldb:hsql://localhost/exemploweb" />
     <property name="poolSize" value="10" />
@@ -43,26 +56,19 @@
     <property name="uniqueResourceName" value="atomikosDatasource" />
     <property name="borrowConnectionTimeout" value="180" />
   </bean>
-  
+    
 
-  <!-- Hibernate -->
-  <bean id="hbnSessionFactory" parent="abstractHbnSessionFactory">
-    <property name="hibernateProperties">
-      <props merge="true">
-        <prop key="hibernate.show_sql">true</prop>
-        <prop key="hibernate.format_sql">false</prop>
-       
-        <!-- HSQLDB Desenvolvimento -->
-        <prop key="hibernate.dialect">org.hibernate.dialect.HSQLDialect</prop>
-        <prop key="hibernate.hbm2ddl.auto">update</prop>
-
-        <prop key="hibernate.connection.shutdown">true</prop>
-        <prop key="hibernate.jdbc.batch_size">0</prop>
-        
-      </props>
-    </property>
-  </bean>
-
+  <!-- Spring Transaction + HSQLDB (caso prefira nao usar Atomikos)
+  <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+    <property name="sessionFactory"><ref bean="hbnSessionFactory" /></property>  
+  </bean>        
+  <bean id="mainDS" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<property name="url" value="jdbc:hsqldb:hsql://localhost/exemploweb" />
+	<property name="driverClassName" value="org.hsqldb.jdbcDriver" />
+	<property name="username" value="sa" />
+	<property name="password" value="" />
+  </bean> 
+  -->
 
   <bean id="CargaBasica" class="marcos2250.exemploweb.util.CargaBasica" init-method="fazerCarga" />
    

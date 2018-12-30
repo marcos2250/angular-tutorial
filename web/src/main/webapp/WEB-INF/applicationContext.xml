@@ -9,8 +9,12 @@
 			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
 			http://www.springframework.org/schema/util 
     		http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+  
+  <!-- Para desenvolvimento local -->
+  <import resource="applicationContext-desktop.xml" />
+  
+  <!-- Para uso em servidor Java EE
+  <import resource="applicationContext-server.xml" />
+  -->
 
-
-  <import resource="classpath:applicationContext-negocio.xml" />
-   
 </beans>

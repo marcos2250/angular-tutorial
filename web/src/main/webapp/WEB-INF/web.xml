@@ -4,12 +4,11 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
          id="WebApp_ID" version="3.0">
 
-  <display-name>aplicacao</display-name>
+  <display-name>exemploweb</display-name>
 
   <filter>
     <filter-name>hibernateSession</filter-name>
-    <filter-class>
-      org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+    <filter-class>org.springframework.orm.hibernate5.support.OpenSessionInViewFilter</filter-class>
     <init-param>
       <param-name>sessionFactoryBeanName</param-name>
       <param-value>hbnSessionFactory</param-value>
@@ -30,7 +29,7 @@
   </listener>
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>WEB-INF/applicationContext*.xml</param-value>
+    <param-value>WEB-INF/applicationContext.xml</param-value>
   </context-param>
 
   <!-- Spring MVC Servlet (p/ REST) -->
